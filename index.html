@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador con Ámbito</title>
+</head>
+<body>
+    <h1>Contador</h1>
+<!-- Span grande con id="valor" que empieza en 0 -->
+    <h2>Valor: <span id="valor">0</span></h2>
+    <!-- Extra: Input para elegir de cuánto en cuánto se cuenta -->
+    <label for="paso">Paso:</label>
+    <input type="number" id="paso" value="1" min="1">
+    <br><br>
+    <!-- Tres botones: -, Reiniciar, + -->
+    <button onclick="decrementar(leerPaso())">-</button>
+    <button onclick="reiniciar()">Reiniciar</button>
+    <button onclick="incrementar(leerPaso())">+</button>
+    <!-- Enlace al archivo de JavaScript -->
+    <script src="funciones.js"></script>
+</body>
+</html>
